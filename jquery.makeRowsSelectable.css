@@ -1,0 +1,70 @@
+tr.selectable{
+	cursor:pointer;
+	-webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+	user-select: none;
+}
+
+tr.selectable:hover{
+	background-color:#ddd;	
+}
+
+tr.selected{
+	background-color:#999!important;
+	color:white!important;
+}
+
+tr.selected td{
+	border-bottom: 1px solid white;
+	border-top: 1px solid white;
+}
+
+table .selector .select_box, table .selector img{
+	
+}
+
+table .selector{
+	padding:0.25em 4px 0.25em 0;
+	display:none;
+	background-color:white!important;
+	width:1px;
+}
+
+table .selector .select_box{
+	width:20px;
+	height:20px;
+	border: 1px solid #666;
+	border-radius:3px;
+}
+
+table .selected .selector .select_box{
+	background-color:white;
+	background-image:url(../../assets/images/box_tick.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.select_all{
+	margin-top:10px;
+	cursor:pointer;
+}
+
+div.select_all:before{
+	position:relative;
+	top:3px;
+	font-size:0;
+	content:' ';
+	padding-right:20px;
+	padding-top:20px;
+	margin-right:3px;
+	border: 1px solid #666;
+	border-radius:3px;
+}
+
+div.select_all.selected:before{
+	background-image:url(../../assets/images/box_tick.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
